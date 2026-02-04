@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayson</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header id="navbar">
+  <div class="nav-inner">
+    <h3 class="lobster-two-bold">Jayson C. Claros</h3>
+    <div class="nav-actions">
+      <a href="https://wa.me/639489340157" class="nav-btn whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="viber://chat?number=639489340157" class="nav-btn viber">
+        <i class="fab fa-viber"></i> Viber
+      </a>
+    </div>
+  </div>
+</header>
+  <section id="section1" class="cover">
+    <div class="overlay"></div>
+
+    <div class="content">
+        <img src="/images/me.jpg" alt="Profile" class="profile-pic">
+        <div class="divider">
+          <span>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+          </span>
+        </div>
+         <h1 class="lobster-two-bold">Jayson C. Claros</h1>
+        <h2 class="share-tech-regular">Full Stack Web Developer</h2>
+        <div class="contact-buttons">
+            <a href="https://wa.me/639489340157" target="_blank" class="btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="viber://chat?number=639489340157" class="btn viber">
+                <i class="fab fa-viber"></i> Viber
+            </a>
+        </div>
+    </div>
+  </section>
+<h1 class="experience-title">Experience</h1>
+<section id="section2">
+  <div class="experience">
+  <div class="experience-wrapper">
+  <img src="/images/mecooking.png" alt="" class="floating-img">
+  <div class="experience-content">
+    <!-- <img src="/images/illustration.png" alt="Experience image" class="experience-img"> -->
+    <p>
+    Experienced Full-Stack Web Developer with a strong background in building, revamping and maintaining mediumto enterprise-level web applications from the ground up. Skilled in all aspects of development, including database
+design, UI implementation, server configuration, and system support. Reliable, detail-oriented, and experienced in
+collaborating with remote teams and international clients.
+    </p>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+
+<section id="section3" style="margin-top: -30px;">
+  <div class="project">    
+    <h1 class="work-title">Recent Works</h1>
+    <div class="recent-projects">
+      <div class="project-item">
+        <img src="/images/projects/fun88chile.jpg" alt="">
+        <a href="https://www.fun88chile.com" target="_blank" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/mcat.jpg" alt="">
+        <a href="https://mcatspec.com" target="_blank" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/mdd.jpg" alt="">
+        <a href="#" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/nawras.jpg" alt="">
+        <a href="https://nawras.com.ph" target="_blank" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/octagon.jpg" alt="">
+        <a href="https://octagon.com.ph" target="_blank" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/property_concierge.jpg" alt="">
+        <a href="https://propertyconcierge.ae" target="_blank"class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/alif.jpg" alt="">
+        <a href="#" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/rs.jpg" alt="">
+        <a href="http://requisition.octagon.com.ph:81/portal/index.php/public/login/jc/load.jss" target="_blank" class="project-btn">View Project</a>  
+      </div>
+      <div class="project-item">
+        <img src="/images/projects/makita.jpg" alt="">
+        <a href="#" class="project-btn">Makita Power Tools</a>  
+      </div>
+    </div>
+    <!-- <a href="" class="more">see more...</a> -->
+  </div>
+</section>
+
+<section id="section4">
+  <div class="deliver-header">
+    <h1 class="list-title">What I Deliver</h1>
+  </div>
+
+  <div class="deliver_list">
+    <p>Build websites that work smoothly on all devices and browsers.</p>
+    <p>Develop secure systems that protect user data and prevent common security issues.</p>
+    <p>Create custom systems to help businesses manage users, content, and operations efficiently.</p>
+  </div>
+
+
+  <div class="repo_social">    
+    <div class="social-item">
+      <a href="#" class="social-icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <div class="social-item">
+      <a href="#" class="social-icon facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      </div>
+  </div>
+</section>
+
+<section id="section5">
+  <hr>
+  <div class="footer">   
+    <p>&copy; <span id="year"></span>&nbsp;</p> 
+  <a href="#" class="express">
+    <img src="https://cdn.simpleicons.org/express/ffffff" alt="ExpressJS">
+  </a>.js
+  </div>
+</section>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const navbar = document.getElementById('navbar');
+const firstSection = document.getElementById('section1');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const firstSectionHeight = firstSection.offsetHeight;
+  if (scrollY > firstSectionHeight) {
+    navbar.classList.add('show');
+  } else {
+    navbar.classList.remove('show');
+  }
+});
+
+</script>
+
+</body>
+</html>

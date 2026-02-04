@@ -1,0 +1,47 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 40px;
+  background: #1b396f;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+h3 {
+  font-size: 1rem;
+  color: #fff;
+}
+#navbar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-btn.whatsapp {
+  background: #25D366;
+}
+.nav-btn.viber {
+  background: #7360F2;
+}

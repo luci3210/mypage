@@ -1,0 +1,166 @@
+.two-column-profile {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+  }
+
+.profile-left {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-left:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-right {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-right:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* MAIN LAYOUT - FLEXBOX SOLUTION */
+.profile-info {
+    display: flex;                /* Create flex container */
+    align-items: flex-start;      /* Align items to top */
+    gap: 30px;                    /* Space between image and text */
+    padding: 20px;
+}
+
+/* Keep your existing image style */
+.profile-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;            /* Ensures image fills the circle */
+    flex-shrink: 0;               /* Prevents image from shrinking */
+}
+
+/* Text container - positions all text on right side */
+.profile-info > *:not(img) {
+    flex: 1;                     /* Takes remaining space */
+}
+
+/* Name styling */
+.profile_name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Title styling - appears under name */
+.profile_title {
+    font-size: 18px;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Contact info - appears under title */
+.profile_contact {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    display: block;
+}
+
+/* ALTERNATIVE: GRID LAYOUT */
+/*
+.profile-info {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px 30px;
+    align-items: start;
+    padding: 20px;
+}
+
+.profile-info img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_name {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.profile_title {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 18px;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.profile_contact {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 16px;
+    color: #666;
+}
+*/
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    /* Stack vertically on mobile */
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-info > *:not(img) {
+        width: 100%;
+    }
+}
+
+/* VISUAL ENHANCEMENTS (Optional) */
+.profile-info {
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.profile_name {
+    background: linear-gradient(90deg, #2c3e50, #4a6cf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile_title {
+    padding: 5px 15px;
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.profile_contact {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 5px;
+}
